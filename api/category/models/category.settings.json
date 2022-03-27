@@ -15,12 +15,13 @@
     "title": {
       "type": "string"
     },
-    "recipes": {
-      "collection": "recipes"
-    },
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "recipes": {
+      "via": "category",
+      "collection": "recipes"
     }
   }
 }

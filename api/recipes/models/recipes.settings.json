@@ -33,34 +33,13 @@
       "type": "boolean"
     },
     "category": {
-      "model": "category"
-    },
-    "thumbnail": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+      "model": "category",
+      "via": "recipes"
     },
     "tags": {
-      "collection": "tag"
-    },
-    "header": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
+      "via": "recipes",
+      "collection": "tag",
+      "dominant": true
     },
     "slug": {
       "type": "uid",
