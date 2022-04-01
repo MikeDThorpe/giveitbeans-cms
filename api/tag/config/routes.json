@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/tags/:id",
+      "path": "/tags/:slug",
       "handler": "tag.findOne",
       "config": {
         "policies": []
